@@ -11,6 +11,14 @@
     --dark2:#050505;
 }
 
+header{
+    background-color: var(--dark2);
+    position: sticky;
+    top: 0;  
+    z-index: 30;
+    padding: 5px 0;
+}
+
 body{
     font-size: 18px;
     font-family: 'Space Mono' , sans-serif;
@@ -21,7 +29,10 @@ body{
 
 .navbar{
     display: flex;
-    justify-content: flex-end;    
+    justify-content: flex-end; 
+    position: sticky;
+    top: 0;
+    z-index: 40;   
 }
 .navbar ul{
     display: flex;
@@ -338,4 +349,48 @@ footer a{
 
 .proyecto span:hover{
     color: var(--secondary);
+}
+
+
+
+/*      CodigoProyecto        */
+
+
+
+.eins-modal-content{
+    max-width: 700px;
+    background-color: var(--dark1);
+}
+
+.eins-modal-preview{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.eins-modal-preview img{
+    width: 100%;
+    padding: 0 50px 20px 0;
+}
+
+.p_Content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+}
+
+.eins-modal-text p{
+    font-size: 1.1rem;
+}
+
+.eins-modal-text2{
+    padding: 80px 0 10px;
+}
+
+.eins-modal-text2 a{
+    color: var(--secondary);
+    margin: 5px;
+}
+
+.eins-modal-tec img{
+    width: 00px;
+    height: 50px;
 }

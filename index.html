@@ -5,31 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
-   
+    <link rel="stylesheet" href="style.css">
+       
     <title>Libia</title>
 </head>
 <body>
-    
     <header>
-        <div class="hero">
-            <div class="navbar">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="index.html">Portafolio</a></li>
-                        <li><a href="habilidades.html">Habilidades</a></li>
-                        <li><a href="#">Sobre mi</a></li>
-                    </ul>
-                </nav>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#contenedor">Portafolio</a></li>
+                    <li><a href="habilidades.html">Habilidades</a></li>
+                    <li><a href="#about_me">Sobre mi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            </div>
+    <section>
+        <div class="hero">
             <img src="Images/ilustracion-asiaticos_3840x2160_xtrafondos.com.jpg" alt="">
         </div>
 
@@ -49,22 +49,23 @@
             </div>
             <div class="CTexto_3"><a href="#about_me"><span>about me |</span></a></div>
         </div>
-    </header>
+    </section>
 
     <section class="contenedor" id="contenedor">
         <div class="SContenedor">
             <h2><span>Contenido |</span> Portafolio</h2>
             <div class="GContenedor">
-                <div><a data-modal-id="myModal"><img src="Images//c++.jpeg" alt=""></a></div>
-                <div><a data-modal-id="myModal"><img src="Images/mandaCryp.jpeg" alt=""></a></div>
-                <div><a data-modal-id="myModal"><img src="Images/Juegos.jpeg" alt=""></a></div>
-                <div><a data-modal-id="myModal"><img src="Images/doc.jpeg" alt=""></a></div>
+                <div><a data-modal-id="p_web"><img src="Images/paginaWeb.jpeg" alt=""></a></div>
+                <div><a data-modal-id="p_c_plus_plus"><img src="Images/c++.jpeg" alt=""></a></div>
+                <div><a data-modal-id="p_manda"><img src="Images/mandaCryp.jpeg" alt=""></a></div>
+                <div><a data-modal-id="p_juegos"><img src="Images/Juegos.jpeg" alt=""></a></div>
+                <div><a data-modal-id="p_hospital"><img src="Images/doc.jpeg" alt=""></a></div>
             </div>
         </div>
     </section>
 
 
-    <section class="about">
+    <section class="about" id="about_me">
         <div class="about_flex">
             <div class="about_info">
                 <p>Mi nombre es Libia Roman, me gradué a la edad de 17 
@@ -116,6 +117,128 @@
         </div>
     </div>
 
+
+    <div id="p_c_plus_plus" class="eins-Modal" data-options="openTransition expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="p_Content">
+                <div class="eins-modal-preview">
+                    <img src="Images/c++.jpeg" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Snake desarrollo de juego en el lenguaje de C++.</p>
+                    <div class="eins-modal-text2">
+                        <span>Enlace:</span><a href="https://github.com/LIBIA71421/SNAKE">https://github.com/LIBIA71421/SNAKE</a>
+                    </div>
+                    <div class="eins-modal-text3">
+                        <span>Tecnologias Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="Images/c plu plus.png" alt="">
+                            <img src="Images/visualStudio.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p_manda" class="eins-Modal" data-options="openTransition expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="p_Content">
+                <div class="eins-modal-preview">
+                    <img src="Images/mandaCryp.jpeg" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Mandacrip desarrollo de de aplicacion de mensajeria instantanea con lenguaje c# y uso de encriptacion RSA, enlazada a una base de datos en SQL Server.</p>
+                    <div class="eins-modal-text2">
+                        <span>Enlace:</span><a href="https://github.com/LIBIA71421/MandaCryp">https://github.com/LIBIA71421/MandaCryp</a>
+                    </div>
+                    <div class="eins-modal-text3">
+                        <span>Tecnologias Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="Images/c sharp.png" alt="">
+                            <img src="Images/visualStudio.png" alt="">
+                            <img src="Images/sql.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p_web" class="eins-Modal" data-options="openTransition expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="p_Content">
+                <div class="eins-modal-preview">
+                    <img src="Images/paginaWeb.jpeg" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>paginaWeb aprendizaje de lenguajes de diseño y etiquetado, con el uso de librerias de NodeJs como tambien JavaScripts para la parte responsive.</p>
+                    <div class="eins-modal-text2">
+                        <span>Enlace:</span><a href="https://github.com/LIBIA71421/PortafolioB">https://github.com/LIBIA71421/PortafolioB</a>
+                    </div>
+                    <div class="eins-modal-text3">
+                        <span>Tecnologias Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="Images/html.png" alt="">
+                            <img src="Images/css.png" alt="">
+                            <img src="Images/Visual_Studio_Code_1.35_icon.svg.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p_juegos" class="eins-Modal" data-options="openTransition expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="p_Content">
+                <div class="eins-modal-preview">
+                    <img src="Images/Juegos.jpeg" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Plataforma de juegos desarrollo de de aplicacion de con lenguaje c#.</p>
+                    <div class="eins-modal-text2">
+                        <span>Enlace:</span><a href="https://github.com/LIBIA71421">https://github.com/LIBIA71421</a>
+                    </div>
+                    <div class="eins-modal-text3">
+                        <span>Tecnologias Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="Images/c sharp.png" alt="">
+                            <img src="Images/visualStudio.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="p_hospital" class="eins-Modal" data-options="openTransition expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="p_Content">
+                <div class="eins-modal-preview">
+                    <img src="Images/doc.jpeg" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Hospital desarrollo de de aplicacion de administradion de pacientes con lenguaje c#.</p>
+                    <div class="eins-modal-text2">
+                        <span>Enlace:</span><a href="https://github.com/LIBIA71421">https://github.com/LIBIA71421</a>
+                    </div>
+                    <div class="eins-modal-text3">
+                        <span>Tecnologias Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="Images/c sharp.png plu plus.png" alt="">
+                            <img src="Images/visualStudio.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
     <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
