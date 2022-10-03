@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
    
     <title>Libia</title>
 </head>
@@ -54,10 +55,10 @@
         <div class="SContenedor">
             <h2><span>Contenido |</span> Portafolio</h2>
             <div class="GContenedor">
-                <div><img src="Images//c++.jpeg" alt=""></div>
-                <div><img src="Images/mandaCryp.jpeg" alt=""></div>
-                <div><img src="Images/Juegos.jpeg" alt=""></div>
-                <div><img src="Images/doc.jpeg" alt=""></div>
+                <div><a data-modal-id="myModal"><img src="Images//c++.jpeg" alt=""></a></div>
+                <div><a data-modal-id="myModal"><img src="Images/mandaCryp.jpeg" alt=""></a></div>
+                <div><a data-modal-id="myModal"><img src="Images/Juegos.jpeg" alt=""></a></div>
+                <div><a data-modal-id="myModal"><img src="Images/doc.jpeg" alt=""></a></div>
             </div>
         </div>
     </section>
@@ -104,6 +105,19 @@
         </address>
     </footer>
 
-    <script src="code.js"></script>
+
+
+    <!--        MODAL SECTION     -->
+    <div id="myModal" class="eins-Modal" data-options="openTransition expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            EX
+            <button class="eins-modal-close-button">OK</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
 </html>
