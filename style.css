@@ -27,46 +27,6 @@ body{
 /*    transition: all 0.4s;*/
 }
 
-.navbar{
-    display: flex;
-    justify-content: flex-end; 
-    position: sticky;
-    top: 0;
-    z-index: 40;   
-}
-.navbar ul{
-    display: flex;
-    list-style: none; /*quita puntos*/
-}
-.navbar a{
-    font-size: 1.5rem;
-    padding: 10px;      /*seperaciones*/
-    text-decoration: none;
-    color:whitesmoke;
-    margin: 20px;
-}
-
-.navbar a:hover{
-    border-bottom: var(--primary) solid;
-}
-
-.hero{
-    background-color: var(--dark2);
-    position: relative;
-}
-
-.hero img{
-    width: 100%;
-    height: 530px;
-    opacity: 0.35;
-}
-
-span{
-    color: var(--primary);
-}
-
-
-
 /*      contenedor      */
 
 
@@ -89,6 +49,7 @@ span{
 
 .GContenedor img{
     width: 100%;
+    height: 80%;
     border-radius: 10px;
     transition: transform 0.2s ease;
 }
@@ -97,151 +58,6 @@ span{
     transform: scale(1.1);
 }
 
-
-/*      PERFIL       */
-
-
-.perfil div{
-    position: absolute;
-}
-.perfil{
-    display: flex;
-    justify-content: center;
-}
-
-.caja{
-    width: 500px;
-    height: 500px;
-    background-color: var(--dark1);
-    opacity: 0.7;
-    z-index: 10;
-    top: 60px;
-    border-radius: 80%;
-}
-
-.circuloT{
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    border: solid 30px var(--primary);
-    z-index: 19;
-    opacity: .2;
-    top: 90px;
-}
-
-.caja:hover{
-    transform: scale(1.1);
-}
-
-.circuloP{
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    border: solid 15px var(--primary);
-    z-index: 21;
-    top: 120px;
-}
-
-.perfil_img{
-    top: 134px;
-    z-index: 20;
-}
-
-.perfil_img img{
-    width: 230px;
-    height: 232px;
-    border-radius: 50%;
-}
-
-
-
-/*  ICONOS   */
-
-
-
-.CTexto{
-    font-size: 1.2rem;
-    color: var(--secondary);
-    top: 380px;
-    z-index: 11;
-}
-
-.CTexto_2{
-    font-size: 1rem;
-    color: var(--secondary);
-    top: 418px;
-    z-index: 11;
-}
-
-.CTexto_3{
-    font-size: 1rem;
-    color: var(--secondary);
-    top: 490px;
-    z-index: 11;
-}
-
-.CTexto_3:hover{
-    border-bottom: var(--primary) solid;
-}
-
-.CTexto_3 a{
-    color: var(--secondary);
-    text-decoration: none;
-}
-
-.iconosC{
-    top: 450px;
-    z-index: 11;
-}
-
-.iconosC img{
-    width: 40px;
-    margin: 0 10px;
-}
-
-.iconosC img:hover{
-    transform: scale(1.2);
-}
-
-
-
-/*      HABILIDADES     */
-
-.contenedorHabilidades2{
-    background-color: var(--dark1);
-}
-
-.Habilidades{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
-    justify-content: center;
-    gap: 170px;
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 110px;
-}
-
-.Habilidades h2{
-    padding-bottom: 60px;
-}
-
-.Habilidades img{
-    width: 90px;
-}
-
-.conocimientos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(110px,auto));
-    justify-content: center;
-    gap: 25px;
-}
-
-.herramientas{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(70px,auto));
-    justify-content: center;
-    gap: 50px;
-}
 
 
 /*      TOOLTIP     */
@@ -352,45 +168,3 @@ footer a{
 }
 
 
-
-/*      CodigoProyecto        */
-
-
-
-.eins-modal-content{
-    max-width: 700px;
-    background-color: var(--dark1);
-}
-
-.eins-modal-preview{
-    width: 300px;
-    margin: 0 auto;
-}
-
-.eins-modal-preview img{
-    width: 100%;
-    padding: 0 50px 20px 0;
-}
-
-.p_Content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
-}
-
-.eins-modal-text p{
-    font-size: 1.1rem;
-}
-
-.eins-modal-text2{
-    padding: 80px 0 10px;
-}
-
-.eins-modal-text2 a{
-    color: var(--secondary);
-    margin: 5px;
-}
-
-.eins-modal-tec img{
-    width: 00px;
-    height: 50px;
-}

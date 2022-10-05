@@ -11,6 +11,12 @@
 
     <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modalStyle.css">
+    <link rel="stylesheet" href="habilidadesStyle.css">
+    <link rel="stylesheet" href="iconosStyle.css">
+    <link rel="stylesheet" href="perfilStyle.css">
+    <link rel="stylesheet" href="navegadorStyle.css">
+    <link rel="stylesheet" href="contactoFormStyle.css">
        
     <title>Libia</title>
 </head>
@@ -19,7 +25,7 @@
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#contenedor">Portafolio</a></li>
                     <li><a href="habilidades.html">Habilidades</a></li>
                     <li><a href="#about_me">Sobre mi</a></li>
@@ -29,7 +35,7 @@
     </header>
 
     <section>
-        <div class="hero">
+        <div class="hero" id="inicio">
             <img src="Images/ilustracion-asiaticos_3840x2160_xtrafondos.com.jpg" alt="">
         </div>
 
@@ -45,7 +51,7 @@
             <div class="iconosC">
                 <a href="https://github.com/LIBIA71421" target="_blank"><img src="Images/Git-icon-white.svg.png" alt=""></a>
                 <a href="https://www.linkedin.com/in/libia-nataly-roman-arevalo-247680252/" target="_blank"><img src="Images/Icono Linkedin white.png" alt=""></a>
-                <a href="#"><img src="Images/gmail_white.png" alt="" target="_blank"></a>
+                <a data-modal-id="message"><img src="Images/gmail_white.png" alt="" target="_blank"></a>
             </div>
             <div class="CTexto_3"><a href="#about_me"><span>about me |</span></a></div>
         </div>
@@ -80,7 +86,7 @@
                     cursos certificados de introduccion hacia la ciberseguridad,
                     los congresos de seguridad de datos, aprendizaje de algunos 
                     lenguajes como C# o python.</p>
-                <p class="otaku"><br>En mis tiempos libres me encanta el armado de origami 3D,
+                <p class="otku"><br>En mis tiempos libres me encanta el armado de origami 3D,
                     me encantan las peliculas y los libros de ciencia ficcion,
                     de genero ciberpunk,</p>
             </div>
@@ -88,7 +94,7 @@
             <div class="redes">
                 <a href="https://github.com/LIBIA71421" target="_blank"><img src="Images/Git-icon-white.svg.png" alt=""></a>
                 <a href="https://www.linkedin.com/in/libia-nataly-roman-arevalo-247680252/" target="_blank"><img src="Images/Icono Linkedin white.png" alt=""></a>
-                <a href="#"><img src="Images/gmail_white.png" alt=""></a>
+                <a data-modal-id="message"><img src="Images/gmail_white.png" alt=""></a>
             </div>
         </div>
 
@@ -108,17 +114,27 @@
 
 
 
-    <!--        MODAL SECTION     --
-    <div id="myModal" class="eins-Modal" data-options="openTransition expandIn; openDuration: 200;">
+    <div id="message" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
         <div class="eins-modal-content">
-            <div class="eins-modal-close"></div>
-            EX
-            <button class="eins-modal-close-button">OK</button>
+          <div class="eins-modal-close"></div>
+            
+          <form class="form" action="https://formspree.io/f/xnqrvvpl" method="POST">
+          <label>
+              Tu Correo Electronico:
+              <input type="email" name="email">
+          </label>
+          <label>
+              Mensaje:
+              <textarea name="message"></textarea>
+          </label>
+          <button type="submit">Enviar</button>
+          </form>
+          
         </div>
-    </div>
--->
+      </div>
 
-    <div id="p_c_plus_plus" class="eins-Modal" data-options="openTransition expandIn; openDuration: 200;">
+
+    <div id="p_c_plus_plus" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
         <div class="eins-modal-content">
             <div class="eins-modal-close"></div>
             <div class="p_Content">
@@ -142,7 +158,7 @@
         </div>
     </div>
 
-    <div id="p_manda" class="eins-Modal" data-options="openTransition expandIn; openDuration: 200;">
+    <div id="p_manda" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
         <div class="eins-modal-content">
             <div class="eins-modal-close"></div>
             <div class="p_Content">
@@ -167,7 +183,7 @@
         </div>
     </div>
 
-    <div id="p_web" class="eins-Modal" data-options="openTransition expandIn; openDuration: 200;">
+    <div id="p_web" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
         <div class="eins-modal-content">
             <div class="eins-modal-close"></div>
             <div class="p_Content">
@@ -192,7 +208,7 @@
         </div>
     </div>
 
-    <div id="p_juegos" class="eins-Modal" data-options="openTransition expandIn; openDuration: 200;">
+    <div id="p_juegos" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
         <div class="eins-modal-content">
             <div class="eins-modal-close"></div>
             <div class="p_Content">
@@ -216,7 +232,7 @@
         </div>
     </div>
 
-    <div id="p_hospital" class="eins-Modal" data-options="openTransition expandIn; openDuration: 200;">
+    <div id="p_hospital" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
         <div class="eins-modal-content">
             <div class="eins-modal-close"></div>
             <div class="p_Content">
@@ -239,24 +255,7 @@
             </div>
         </div>
     </div>
-    
-<!--
-    <form
-    action="https://formspree.io/f/xnqrvvpl"
-    method="POST"
-    >
-    <label>
-        Your email:
-        <input type="email" name="email">
-    </label>
-    <label>
-        Your message:
-        <textarea name="message"></textarea>
-    </label>
-    <!- your other form fields go here --
-    <button type="submit">Send</button>
-    </form>
--->
+
 
     <script src="script.js"></script>
     <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>

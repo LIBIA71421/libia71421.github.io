@@ -1,0 +1,44 @@
+
+/*      MODAL        */
+
+
+
+.eins-modal-content{
+    max-width: 800px;
+    height: 500px;
+    background-color: var(--dark1);
+}
+
+.eins-modal-preview{
+    max-width: 350px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.eins-modal-preview img{
+    width: 100%;
+/*    padding: 0 50px 20px 0;*/
+}
+
+.p_Content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,auto));
+}
+
+.eins-modal-text p{
+    font-size: 1.1rem;
+}
+
+.eins-modal-text2{
+    padding: 80px 0 10px;
+}
+
+.eins-modal-text2 a{
+    color: var(--secondary);
+    margin: 5px;
+}
+
+.eins-modal-tec img{
+    width: 00px;
+    height: 50px;
+}

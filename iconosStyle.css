@@ -1,0 +1,49 @@
+/*  ICONOS   */
+
+
+
+.CTexto{
+    font-size: 1.2rem;
+    color: var(--secondary);
+    top: 380px;
+    z-index: 11;
+}
+
+.CTexto_2{
+    font-size: 1rem;
+    color: var(--secondary);
+    top: 418px;
+    z-index: 11;
+}
+
+.CTexto_3{
+    font-size: 1rem;
+    color: var(--secondary);
+    top: 490px;
+    z-index: 11;
+}
+
+.CTexto_3:hover{
+    border-bottom: var(--primary) solid;
+}
+
+.CTexto_3 a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.iconosC{
+    top: 450px;
+    z-index: 11;
+}
+
+.iconosC img{
+    width: 40px;
+    margin: 0 10px;
+}
+
+.iconosC img:hover{
+    transform: scale(1.2);
+}
+
+

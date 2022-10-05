@@ -1,0 +1,39 @@
+/*      HABILIDADES     */
+
+.contenedorHabilidades2{
+    background-color: var(--dark1);
+}
+
+.Habilidades{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    justify-content: center;
+    gap: 170px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 110px;
+}
+
+.Habilidades h2{
+    padding-bottom: 60px;
+}
+
+.Habilidades img{
+    width: 90px;
+}
+
+.conocimientos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(110px,auto));
+    justify-content: center;
+    gap: 25px;
+}
+
+.herramientas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(70px,auto));
+    justify-content: center;
+    gap: 50px;
+}
+
+
