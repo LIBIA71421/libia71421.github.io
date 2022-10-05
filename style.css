@@ -59,28 +59,6 @@ body{
 }
 
 
-
-/*      TOOLTIP     */
-
-.Habilidades h3{
-    background-color: var(--dark2);
-    text-align: center;
-    border-radius: 5px;
-    padding:  5px 0;
-    font-size: 1.1rem;
-    width: 100px;
-    color: var(--primary);
-    opacity: 0;
-    transform: translate(0px,-100px);
-    transition: transform 0.4s ease, opacity 0.4s ease;
-}
-.conocimientos>div:hover h3,
-.herramientas>div:hover h3{
-    opacity: 1;
-    transform: translate(0px,-150px);
-}
-
-
 /*      contenedor      */
 
 
