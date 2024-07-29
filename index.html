@@ -2,449 +2,319 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
+    <title>Libs</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skills.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="modalStyle.css">
-    <link rel="stylesheet" href="habilidadesStyle.css">
-    <link rel="stylesheet" href="iconosStyle.css">
-    <link rel="stylesheet" href="perfilStyle.css">
-    <link rel="stylesheet" href="navegadorStyle.css">
-    <link rel="stylesheet" href="contactoFormStyle.css">
-       
-    <title>Libia</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#contenedor">Portafolio</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#about_me">Sobre mi</a></li>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav_logo">
+                Roman
+            </a>
+
+            <div class="nav_menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class="uil uil-estate nav_icon"></i> Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="uil uil-user nav_icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="uil uil-file-alt nav_icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="mailto:libianatalyromanarevalo@gmail.com?cc=libianatalyromanarevalo@gmail.com&bcc=libianatalyromanarevalo@gmail.com&subject=Hello%20%5E%5E">
+                                SayHello
+                            <i class="uil uil-message nav_icon"></i> 
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portfolio" class="nav_link">
+                            <i class="uil uil-scenery nav_icon"></i> 
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#services" class="nav_link">
+                            <i class="uil uil-briefcase-alt nav_icon"></i> 
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
+
+                <i class="uil uil-times nav_close" onclick="toggleMenu()"></i>
+            </div>
+            <div class="nav_toggle" onclick="toggleMenu()">
+                <i class="uil uil-apps"></i>
+            </div>
+        </nav>
     </header>
 
-    <section>
-        <div class="hero" id="inicio">
-            <img src="Images/ilustracion-asiaticos_3840x2160_xtrafondos.com.jpg" alt="">
-        </div>
+    <!-- Home -->
+    <section class="home section" id="home">
+        <div class="home_container container grid">
+            <div class="home_content grid">
+                <!-- Social Component -->
+                <div class="home_social">
+                    <a href="https://www.instagram.com/libia71421" class="home_social-icon" target="_blank">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/libia-nataly-roman-arevalo" class="home_social-icon" target="_blank">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/LIBIA71421" class="home_social-icon" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
 
-        <div class="perfil">
-            <div class="caja"></div>
-            <div class="circuloT"></div>
-            <div class="circuloP"></div>
-            <div class="perfil_img"><img src="Images/Conectado_xtrafondos.com.jpg" alt=""></div>
+                <!-- Home Image Placeholder -->
+                <div class="home_img"></div>
 
-            <div class="CTexto">LIBIA NATALY ROMAN AREVALO</div>
-            <div class="CTexto_2"><span>ING. EN SISTEMAS | BATMAN</span></div>
-            
-            <div class="iconosC">
-                <a href="https://github.com/LIBIA71421" target="_blank"><img src="Images/Git-icon-white.svg.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/libia-nataly-roman-arevalo-247680252/" target="_blank"><img src="Images/Icono Linkedin white.png" alt=""></a>
-                <a data-modal-id="message"><img src="Images/gmail_white.png" alt="" target="_blank"></a>
-            </div>
-            <div class="CTexto_3"><a href="#about_me"><span>about me |</span></a></div>
-        </div>
-    </section>
-
-    <section class="contenedor" id="contenedor">
-        <div class="SContenedor">
-            <h2><span>Contenido |</span> Portafolio</h2>
-            <div class="GContenedor">
-                <div><a data-modal-id="p_web"><img src="Images/paginaWeb.jpeg" alt=""></a></div>
-                <div><a data-modal-id="p_c_plus_plus"><img src="Images/c++.jpeg" alt=""></a></div>
-                <div><a data-modal-id="p_manda"><img src="Images/mandaCryp.jpeg" alt=""></a></div>
-                <div><a data-modal-id="p_juegos"><img src="Images/Juegos.jpeg" alt=""></a></div>
-                <div><a data-modal-id="p_hospital"><img src="Images/doc.jpeg" alt=""></a></div>
-                <div><a data-modal-id="p_spider"><img src="Images/spider4.jpg" alt=""></a></div>
-                <div><a data-modal-id="p_calcuSudokuTicTacToe"><img src="Images/calcu.jpg" alt=""></a></div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="about" id="about_me">
-        <div class="about_flex">
-            <div class="about_info">
-                <p>Mi nombre es Libia Roman, me gradué a la edad de 17 
-                    años y actualmente estoy estudiando la carrera de 
-                    Ingenieria de Sistemas en la Universidad Católica 
-                    Boliviana "San Pablo".
-                    He trabajado en diferentes proyectos personales para 
-                    distintas tecnologias y/o plataformas, por ahora estoy 
-                    enfocada hacia el desarrollo de mis habilidades en el 
-                    area de desarrollo web. Constantemente me integro en 
-                    todo tipo de actividades afines a la carrera, como los 
-                    cursos certificados de introduccion hacia la ciberseguridad,
-                    los congresos de seguridad de datos, aprendizaje de algunos 
-                    lenguajes como C# o python.</p>
-                <p class="otku"><br>En mis tiempos libres me encanta el armado de origami 3D,
-                    me encantan las peliculas y los libros de ciencia ficcion,
-                    de genero ciberpunk,</p>
+                <!-- Data Component -->
+                <div class="home_data">
+                    <h1 class="home-title">
+                        Libia Roman
+                        <svg fill="none" width="36" height="36" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" class="home_hand">
+                            <title>hand</title>
+                            <path d="M31 8.5c0 0-2.53 5.333-3.215 8.062-0.896 3.57 0.13 6.268-1.172 9.73-2.25 4.060-2.402 4.717-10.613 4.708-3.009-0.003-11.626-2.297-11.626-2.297-1.188-0.305-3.373-0.125-3.373-1.453s1.554-2.296 2.936-2.3l5.439 0.478c1.322-0.083 2.705-0.856 2.747-2.585-0.022-2.558-0.275-4.522-1.573-6.6l-5.042-7.867c-0.301-0.626-0.373-1.694 0.499-2.171s1.862 0.232 2.2 0.849l5.631 7.66c0.602 0.559 1.671 0.667 1.58-0.524l-2.487-11.401c-0.155-0.81 0.256-1.791 1.194-1.791 1.231 0 1.987 0.47 1.963 1.213l2.734 11.249c0.214 0.547 0.972 0.475 1.176-0.031l0.779-10.939c0.040-0.349 0.495-0.957 1.369-0.831s1.377 1.063 1.285 1.424l-0.253 10.809c0.177 0.958 0.93 1.098 1.517 0.563l3.827-6.843c0.232-0.574 1.143-0.693 1.67-0.466 0.491 0.32 0.81 0.748 0.81 1.351v0z"></path>
+                        </svg>
+                    </h1>
+                    <h3 class="home_subtitle">Systems Engineer</h3>
+                    <p class="home_descripcion">Mi nombre es Libia Nataly Román Arevalo y actualmente soy estudiante de Ingeniería de Sistemas en la Universidad Católica Boliviana "San Pablo".</p>
+                    <a href="#contact" class="button button--flex">
+                        Say Hello
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="button_icon">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2111 2.06722L3.70001 5.94499C1.63843 6.46039 1.38108 9.28612 3.31563 10.1655L8.09467 12.3378C9.07447 12.7831 10.1351 12.944 11.1658 12.8342C11.056 13.8649 11.2168 14.9255 11.6622 15.9053L13.8345 20.6843C14.7139 22.6189 17.5396 22.3615 18.055 20.3L21.9327 4.78886C22.3437 3.14517 20.8548 1.6563 19.2111 2.06722ZM8.92228 10.517C9.85936 10.943 10.9082 10.9755 11.8474 10.6424C12.2024 10.5165 12.5417 10.3383 12.8534 10.1094C12.8968 10.0775 12.9397 10.0446 12.982 10.0108L15.2708 8.17974C15.6351 7.88831 16.1117 8.36491 15.8202 8.7292L13.9892 11.018C13.9553 11.0603 13.9225 11.1032 13.8906 11.1466C13.6617 11.4583 13.4835 11.7976 13.3576 12.1526C13.0244 13.0918 13.057 14.1406 13.4829 15.0777L15.6552 19.8567C15.751 20.0673 16.0586 20.0393 16.1147 19.8149L19.9925 4.30379C20.0372 4.12485 19.8751 3.96277 19.6962 4.00751L4.18509 7.88528C3.96065 7.94138 3.93264 8.249 4.14324 8.34473L8.92228 10.517Z" fill="var(--container-color)"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
 
-            <div class="redes">
-                <a data-modal-id="p_retrato"><img src="Images/pluma.png" alt=""></a>
-                <a data-modal-id="p_buho"><img src="Images/pluma.png" alt=""></a>
-                <a data-modal-id="p_anime"><img src="Images/pluma.png" alt=""></a>
-                <a data-modal-id="p_origami"><img src="Images/mariOri.png" alt=""></a>
-            </div>
-        </div>
-
-        <div class="proyecto">
-            <div>
-                <a href="https://github.com/LIBIA71421/PortafolioB" target="_blank"><img src="Images/Git-icon-white.svg.png" alt=""><span>Codigo del proyecto</span></a>
+            <!-- ScrollDown Component -->
+            <div class="home_scroll">
+                <a href="#about" class="home_scroll-button button--flex">
+                    <svg width="32" height="32" viewBox="0 0 247 390" fill="none" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        style="fill-rule:evenodd; clip-rule:evenodd; stroke-linecap:round; stroke-linejoin:round; stroke-miterlimit:1.5;">
+                        <g clip-path="url(#clip0)">
+                            <path class="mause" style="fill:none; stroke:var(--title-color); stroke-width:20px;" d="M107.516 125.524C110.908 113.824 112.346 101.645 111.773 89.4761C111.542 85.6346 110.63 81.8639 109.082 78.3407C108.447 76.8574 107.492 75.5329 106.284 74.4631C105.077 73.3926 103.648 72.603 102.099 72.1514C100.417 71.6605 98.6484 71.5437 96.917 71.8075C95.1849 72.0714 93.531 72.7106 92.0719 73.6801C91.7267 73.9052 91.3893 74.1428 91.0389 74.3896L90.8498 74.5208C89.9244 72.5151 88.5454 70.7521 86.8212 69.3712C85.097 67.9903 83.0749 67.03 80.9155 66.5654C79.0771 66.2164 77.1823 66.3179 75.3924 66.8607C73.6019 67.4035 71.9696 68.3722 70.6353 69.683C69.1191 67.3359 67.072 64.9344 63.5467 64.2203C60.1442 63.535 57.4585 65.1949 54.8614 66.8029L54.8377 66.818C54.7502 65.5054 54.6667 64.2145 54.5871 62.9456C54.3849 59.7296 54.1932 56.696 53.8907 53.6335C53.7778 52.4959 53.6684 51.3562 53.5625 50.2147C53.0512 44.8504 52.5223 39.3031 51.5477 33.9224C51.0226 31.0155 49.7243 27.8585 47.5859 24.2742C46.3389 22.1818 44.7144 20.9269 42.7618 20.5475C40.9083 20.1852 38.8028 20.6683 36.673 21.9416C35.5717 22.5959 34.6125 23.4642 33.8522 24.4952C33.0918 25.5261 32.5457 26.699 32.246 27.9445C31.8181 29.4782 31.5418 31.0502 31.4211 32.6379C31.3533 33.7134 31.283 34.7894 31.2108 35.8658C30.9293 40.0992 30.6392 44.4763 30.6465 48.7871C30.6602 57.5381 30.7994 66.4741 30.9346 75.1168C30.9879 78.5297 31.0393 81.9552 31.0887 85.3931C30.9887 85.3327 30.892 85.2664 30.7987 85.1962C30.6484 85.0767 30.5065 84.9448 30.3641 84.8129C30.1778 84.6324 29.9806 84.463 29.7735 84.3068C23.0565 79.4532 15.9248 77.7559 8.56331 79.2629C6.98725 79.551 5.50812 80.2283 4.26027 81.2338C3.01242 82.2387 2.03524 83.5396 1.41764 85.0176C0.800738 86.5594 0.578595 88.2304 0.770913 89.8798C0.96323 91.5292 1.56407 93.1037 2.51912 94.4623C3.30486 95.544 4.20735 96.5364 5.21017 97.4204C5.78578 97.9672 6.38098 98.5329 6.90934 99.1269C7.86169 100.193 8.86116 101.254 9.82795 102.277C12.3568 104.816 14.6679 107.563 16.7362 110.489C18.8279 113.789 20.7247 117.208 22.4172 120.728C23.3656 122.606 24.3461 124.548 25.3746 126.421L25.6012 126.834C28.0756 131.341 30.6339 136.001 33.4391 140.409C34.8328 142.485 36.5615 144.314 38.5545 145.824C42.5821 148.938 47.0663 151.412 51.8483 153.159C56.6175 155.001 61.6868 155.944 66.7996 155.939C72.6811 155.884 78.5041 154.771 83.9918 152.653C87.7421 151.252 91.1793 148.812 94.6625 146.22C100.657 141.756 104.744 135.181 107.516 125.524ZM36.8442 68.2003C36.8055 66.5594 36.7268 64.8983 36.6474 63.2889C36.5161 60.489 36.3775 57.5932 36.4503 54.7565C36.6571 46.4722 37.1113 38.3875 37.5274 31.5714C37.7532 27.871 38.3749 26.9416 41.6376 25.6276C43.7096 27.0407 44.9698 29.2676 45.6006 32.6189C46.4704 37.1178 47.0718 41.6644 47.402 46.2346C47.8844 53.3697 48.241 60.6347 48.5836 67.6601C48.7341 70.7114 48.8871 73.7614 49.0428 76.8114C49.1295 78.4713 49.5103 80.2342 51.6775 80.7311C53.7837 81.2135 54.8989 79.5103 55.7088 77.7776C55.8873 77.3949 56.0645 77.0097 56.2404 76.6231C57.048 74.6711 58.0648 72.8124 59.2728 71.0796C60.3229 69.6948 61.6479 69.0201 62.916 69.2314C64.2109 69.446 65.2788 70.5441 65.8394 72.246C66.2411 73.6945 66.4564 75.1883 66.48 76.6913C66.5082 77.1711 66.5365 77.6502 66.5758 78.1235C66.5936 78.5212 66.5745 78.9189 66.5207 79.3134C66.4052 79.9409 66.4275 80.586 66.5863 81.2043C66.965 82.1829 67.7074 82.9764 68.6584 83.4201C68.9491 83.5461 69.2616 83.6124 69.5786 83.615C69.8949 83.6183 70.2093 83.5579 70.502 83.4372C70.8125 83.2954 71.0914 83.0926 71.3225 82.8412C71.5535 82.5892 71.7314 82.2945 71.8469 81.9729C72.0261 81.4806 72.1685 80.9766 72.2735 80.4633C72.37 79.9907 72.4993 79.5261 72.6614 79.0719C72.815 78.6728 72.9646 78.2711 73.1149 77.8688C73.6557 76.2844 74.3265 74.7479 75.1207 73.2744C76.2496 71.3212 77.5951 70.8125 79.9198 71.4557C82.8904 72.2781 84.757 74.1401 85.3162 76.841C85.5991 78.428 85.7593 80.0347 85.796 81.6467C85.8203 82.1455 85.8446 82.6443 85.8754 83.1405C85.9713 84.6698 86.3388 86.3021 88.3341 86.8088C90.2933 87.3069 91.3349 86.0632 92.1723 84.6481C92.3692 84.3127 92.5662 83.9747 92.7631 83.6354C93.3761 82.5137 94.0633 81.4347 94.8207 80.4055C96.3467 78.4365 98.168 77.4435 99.8148 77.6824C101.381 77.9115 102.699 79.2176 103.525 81.3579C104.93 84.7354 105.759 88.3243 105.978 91.9761C106.31 101.945 105.05 111.903 102.245 121.474C100.82 126.393 98.6629 131.07 95.8478 135.349C92.5432 140.294 87.322 143.816 79.885 146.121C67.0097 150.11 54.9007 147.943 42.874 139.496C41.6943 138.71 40.6646 137.719 39.8333 136.57C37.7922 133.633 35.9026 130.594 34.1717 127.464C31.5201 122.542 28.936 117.441 26.2713 111.875C22.2184 103.413 17.0886 96.8363 10.5849 91.7681C10.419 91.6414 10.2622 91.5036 10.1157 91.3552C9.9411 91.1734 9.761 90.9936 9.58116 90.8131C8.26849 89.5004 7.02755 88.2534 7.79612 86.2509C8.62114 84.0974 10.7627 83.8881 12.8853 83.8572H13.0981C19.6378 83.8572 29.1264 88.0663 30.275 96.1307C30.5756 98.2461 31.7884 99.4557 33.6032 99.4557H33.6471C35.4428 99.4367 36.6363 98.3078 37.0983 96.1911C37.2899 95.2906 37.3761 94.3705 37.355 93.4503C37.1765 83.2416 37.0155 75.4548 36.8442 68.2003Z" fill="#000000"/>
+                            <path class="wheel" style="fill:none; stroke:var(--title-color); stroke-width:20px;" d="M19.7533 10.6791L20.782 11.9182C22.1656 13.5873 23.5386 15.2419 24.9287 16.8788C25.6425 17.7705 26.4391 18.5927 27.3079 19.3342C27.6248 19.6151 27.994 19.8305 28.3946 19.9678C28.7952 20.1052 29.2194 20.1617 29.6419 20.1343C29.9323 20.0952 30.2114 19.9968 30.462 19.8452C30.7127 19.6936 30.9294 19.4919 31.0989 19.2528C31.413 18.7658 31.6195 18.2173 31.7045 17.6439C31.7895 17.0706 31.7511 16.4858 31.5917 15.9285C31.0612 14.7102 30.3064 13.6025 29.3666 12.6632L29.2532 12.5319C27.1529 10.1376 24.9832 7.73541 22.8869 5.41261C22.0844 4.52393 21.2826 3.63504 20.4814 2.74592C19.1307 1.24422 18.1059 0.602997 17.0571 0.601685H17.0539C16.0477 0.601685 15.0587 1.19764 13.8504 2.53328C10.3653 6.38664 6.97922 10.4421 3.70345 14.3631C2.86202 15.3717 2.01925 16.3794 1.1752 17.3862C0.89629 17.6791 0.678146 18.0242 0.533281 18.4018C0.388417 18.7794 0.319615 19.182 0.33106 19.5862C0.36418 19.8938 0.459397 20.1915 0.611157 20.461C0.762918 20.7306 0.968192 20.9664 1.21398 21.1542C2.36191 22.1151 3.7697 21.9254 4.9767 20.6495C5.78597 19.7963 6.56962 18.8925 7.32898 18.0202C7.88359 17.3816 8.43957 16.7423 9.00862 16.1168C9.37223 15.7171 9.73053 15.3082 10.0909 14.8901C11.0189 13.7869 12.0062 12.7353 13.0489 11.7397C13.0489 11.9648 13.049 12.1709 13.0457 12.3626C13.0417 13.0544 13.0383 13.5565 13.0527 14.0579L13.2268 20.2872C13.4112 26.9635 13.6022 33.8668 13.8549 40.6547C13.9501 42.5804 14.2537 44.4901 14.7606 46.3504C14.9218 46.9893 15.2988 47.5527 15.8281 47.9452C16.3573 48.3376 17.0063 48.535 17.6644 48.5038C17.7642 48.5038 17.8612 48.4999 17.9669 48.492C18.6729 48.4725 19.3462 48.1908 19.8558 47.7018C20.3654 47.2128 20.6747 46.5516 20.7233 45.847C20.8893 44.7174 20.947 43.5745 20.8955 42.434C20.7642 40.2208 20.6113 38.0083 20.4571 35.7965C20.2011 32.1374 19.9364 28.3529 19.7946 24.6295C19.6673 21.2743 19.6971 17.9657 19.7292 14.4629C19.7378 13.2145 19.7493 11.957 19.7533 10.6791Z" fill="#000000"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="112.234" height="155.552" fill="white" transform="translate(0.19519 0.602173)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="home_scroll-name">Scroll Down</span>
+                    <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                </a>
             </div>
         </div>
     </section>
-
-    <section class="skills" id="habilidades">
-        <div class="skill container"> 
-            <div class="knowledge-part">
-                <h2><span>Knowledge |</span> Conocimientos</h2>
-                <div class="knowledge">
-                    <div>
-                        <img src="Images/html.png" alt="">
-                        <h3>HTML</h3>
-                    </div>
-                    <div>
-                        <img src="Images/css.png" alt="">
-                        <h3>CSS</h3> 
-                    </div>
-                    <div><img src="Images/c plu plus.png" alt="">
-                        <h3>C++</h3>
-                    </div>
-                    <div><img src="Images/c sharp.png" alt="">
-                        <h3>C#</h3>
-                    </div>
-                    <div><img src="Images/git.png" alt="">
-                        <h3>GIT</h3>
-                    </div>
-                    <div><img src="Images/python.png" alt="">
-                        <h3>PYTHON</h3>
-                    </div>
-                    <div><img src="Images/sql.png" alt="">
-                        <h3>SQL SERVER</h3>
-                    </div>
-                    <div><img src="Images/segCibernetica.jfif" alt="">
-                        <h3>SEGURIDAD</h3>
-                    </div>
+ <!-- About Section -->
+ <section class="about section" id="about">
+    <h2 class="section_title">About Me</h2>
+    <span class="section_subtitle">My introduction</span>
+    
+    <div class="about_container container grid">
+        <img src="/Images/about.jpg" alt="About Me" class="about_img" />
+        
+        <div class="about_data">
+            <!-- Info Component -->
+            <div class="about_info grid">
+                <div class="about_box">
+                    <i class="bx bx-award about_icon"></i>
+                    <h3 class="about_title">Experience</h3>
+                    <span class="about_subtitle">1 Years Working</span>
+                </div>
+                <div class="about_box">
+                    <i class="bx bx-briefcase-alt about_icon"></i>
+                    <h3 class="about_title">Completed</h3>
+                    <span class="about_subtitle">10 + Projects</span>
+                </div>
+                <div class="about_box">
+                    <i class="bx bx-support about_icon"></i>
+                    <h3 class="about_title">Support</h3>
+                    <span class="about_subtitle">Online 24/7</span>
                 </div>
             </div>
-    
-    
-            <div class="tools-part">
-                <h2><span>Dev Tools |</span> Herramientas</h2>
-                <div class="tools">
-                    <div>
-                        <img src="Images/visualStudio.png" alt="">
-                        <h3>Visual Studio</h3>
+
+            <p class="about_description">
+                Tengo experiencia en desarrollo web y software utilizando tecnologías como C++, C#, Angular, React, JavaScript, Node.js, HTML, CSS, SQL Server, MongoDB, Firebase y Wix. Entre mis proyectos destacados se encuentra un ecommerce completo en React. Además, he trabajado como auxiliar en ayudantías en la universidad y participé en una hackatón con un proyecto llamado Neuromynda, donde aprendí a usar Gemini como evaluador de estados emocionales en JavaScript.
+            </p>
+            <a download="" href="CV.pdf" class="button button_flex">
+                Download CV
+                <svg class="button_icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g>
+                        <path fill="var(--container-color)" d="M21.5,0h-13H8.369H7.685C7.56,0,7.44,0.047,7.348,0.131L7.262,0.209c-0.144,0.07-0.284,0.157-0.41,0.281 L4.364,2.857L0.163,6.694C0.059,6.789,0,6.923,0,7.063V7.5v0.268V25.5C0,26.327,0.673,27,1.5,27h20c0.827,0,1.5-0.673,1.5-1.5v-24 C23,0.673,22.327,0,21.5,0z M1.463,6.996l3.584-3.41L7.802,1.07C7.862,1.051,7.922,1.031,8,1.021V7H1.459 C1.46,6.999,1.462,6.997,1.463,6.996z M22,25.5c0,0.275-0.224,0.5-0.5,0.5h-20C1.224,26,1,25.775,1,25.5V8h7.5 C8.776,8,9,7.776,9,7.5V1h12.5C21.776,1,22,1.225,22,1.5V25.5z"/>
+                        <path fill="var(--container-color)" d="M26.5,31h-20C6.224,31,6,30.775,6,30.5v-0.604c0-0.276-0.224-0.5-0.5-0.5S5,29.62,5,29.896V30.5 C5,31.327,5.673,32,6.5,32h20c0.827,0,1.5-0.673,1.5-1.5v-24C28,5.673,27.327,5,26.5,5h-0.792c-0.276,0-0.5,0.224-0.5,0.5 s0.224,0.5,0.5,0.5H26.5C26.776,6,27,6.225,27,6.5v24C27,30.775,26.776,31,26.5,31z"/>
+                        <path fill="var(--container-color)" d="M18,11H5c-0.276,0-0.5,0.224-0.5,0.5S4.724,12,5,12h13c0.276,0,0.5-0.224,0.5-0.5S18.276,11,18,11z"/>
+                        <path fill="var(--container-color)" d="M18,15H5c-0.276,0-0.5,0.224-0.5,0.5S4.724,16,5,16h13c0.276,0,0.5-0.224,0.5-0.5S18.276,15,18,15z"/>
+                        <path fill="var(--container-color)" d="M18,19H5c-0.276,0-0.5,0.224-0.5,0.5S4.724,20,5,20h13c0.276,0,0.5-0.224,0.5-0.5S18.276,19,18,19z"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+ <!-- Skills Section -->
+ <section class="skills section" id="skills">
+    <h2 class="section_title">Skills</h2>
+    <span class="section_subtitle">My technical level</span>
+    <div class="skills_container container grid">
+        <!-- Frontend Developer -->
+        <div class="skills_content">
+            <h3 class="skills_title">Frontend Developer</h3>
+            <div class="skills_box">
+                <div class="skills_group">
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">HTML</h3>
+                            <span class="skills_level">Basic</span>
+                        </div>
                     </div>
-                    <div>
-                        <img src="Images/Visual_Studio_Code_1.35_icon.svg.png" alt="">
-                        <h3>Visual Studio Code</h3>
+
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">CSS</h3>
+                            <span class="skills_level">Advanced</span>
+                        </div>
                     </div>
-                    <div>
-                        <img src="Images/Git-icon-white.svg.png" alt="">
-                        <h3>GitHub</h3>
+
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">JavaScript</h3>
+                            <span class="skills_level">Intermediate</span>
+                        </div>
                     </div>
-                    <div>
-                        <img src="Images/replit.png" alt="">
-                        <h3 >GIT</h3>
+                </div>
+                <div class="skills_group">
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">Bootstrap</h3>
+                            <span class="skills_level">Intermediate</span>
+                        </div>
                     </div>
-                   <div> 
-                       <img src="./img/npm-icon.png" alt="">
-                        <h3>NPM</h3>
+
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">Git</h3>
+                            <span class="skills_level">Intermediate</span>
+                        </div>
                     </div>
-                    <div>
-                        <img src="Images/colab.png" alt="">
-                        <h3>COLAB</h3>
+
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">React</h3>
+                            <span class="skills_level">Intermediate</span>
+                        </div>
                     </div>
-                    <div>
-                        <img src="Images/unity.png" alt="">
-                        <h3>UNITY</h3>
+
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">Angular</h3>
+                            <span class="skills_level">Intermediate</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <footer>
-        <address>
-            <p id ="autor">Autor: Libia Nataly Roman Arevalo</p>
-            <a id = "autor" href = "mailto:libia.roman@ucb.edu.bo">libia.roman@ucb.edu.bo</a>
-        </address>
-    </footer>
-
-
-
-    <div id="message" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-          <div class="eins-modal-close"></div>
-            
-          <form class="form" action="https://formspree.io/f/xnqrvvpl" method="POST">
-          <label>
-              Tu Correo Electronico:
-              <input type="email" name="email">
-          </label>
-          <label>
-              Mensaje:
-              <textarea name="message"></textarea>
-          </label>
-          <button type="submit">Enviar</button>
-          </form>
-          
-        </div>
-      </div>
-
-
-    <div id="p_c_plus_plus" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"></div>
-            <div class="p_Content">
-                <div class="eins-modal-preview">
-                    <img src="Images/c++.jpeg" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>Snake desarrollo de juego en el lenguaje de C++.</p>
-                    <div class="eins-modal-text2">
-                        <span>Enlace:</span><a href="https://github.com/LIBIA71421/SNAKE">https://github.com/LIBIA71421/SNAKE</a>
+        <!-- Backend Developer -->
+        <div class="skills_content">
+            <h3 class="skills_title">Backend Developer</h3>
+            <div class="skills_box">
+                <div class="skills_group">
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">C#</h3>
+                            <span class="skills_level">Intermediate</span>
+                        </div>
                     </div>
-                    <div class="eins-modal-text-3">
-                        <span>Tecnologias Usadas:</span>
-                        <div class="eins-modal-tec">
-                            <img src="Images/c plu plus.png" alt="">
-                            <img src="Images/visualStudio.png" alt="">
+
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">Node Js</h3>
+                            <span class="skills_level">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">Python</h3>
+                            <span class="skills_level">Basic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_group">
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">MySQL</h3>
+                            <span class="skills_level">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">Firebase</h3>
+                            <span class="skills_level">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">SQL</h3>
+                            <span class="skills_level">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skills_data">
+                        <i class="bx bx-badge-check"></i>
+                        <div>
+                            <h3 class="skills_name">MongoDB</h3>
+                            <span class="skills_level">Basic</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div id="p_manda" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"></div>
-            <div class="p_Content">
-                <div class="eins-modal-preview">
-                    <img src="Images/mandaCryp.jpeg" alt="">
-                    <img src="Images/mandaCryp2.jfif" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>Mandacrip desarrollo de de aplicacion de mensajeria instantanea con lenguaje c# y uso de encriptacion RSA, enlazada a una base de datos en SQL Server.</p>
-                    <div class="eins-modal-text2">
-                        <span>Enlace:</span><a href="https://github.com/LIBIA71421/MandaCryp">https://github.com/LIBIA71421/MandaCryp</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Tecnologias Usadas:</span>
-                        <div class="eins-modal-tec">
-                            <img src="Images/c sharp.png" alt="">
-                            <img src="Images/visualStudio.png" alt="">
-                            <img src="Images/sql.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="p_web" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"></div>
-            <div class="p_Content">
-                <div class="eins-modal-preview">
-                    <img src="Images/paginaWeb.jpeg" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>paginaWeb aprendizaje de lenguajes de diseño y etiquetado, con el uso de librerias de NodeJs como tambien JavaScripts para la parte responsive.</p>
-                    <div class="eins-modal-text2">
-                        <span>Enlace:</span><a href="https://github.com/LIBIA71421/PortafolioB">https://github.com/LIBIA71421/PortafolioB</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Tecnologias Usadas:</span>
-                        <div class="eins-modal-tec">
-                            <img src="Images/html.png" alt="">
-                            <img src="Images/css.png" alt="">
-                            <img src="Images/Visual_Studio_Code_1.35_icon.svg.png" alt="">
-                            <img src="Images/npm.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="p_juegos" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"></div>
-            <div class="p_Content">
-                <div class="eins-modal-preview">
-                    <img src="Images/Juegos.jpeg" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>Plataforma de juegos desarrollo de de aplicacion de con lenguaje c#.</p>
-                    <div class="eins-modal-text2">
-                        <span>Enlace:</span><a href="https://github.com/LIBIA71421">https://github.com/LIBIA71421</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Tecnologias Usadas:</span>
-                        <div class="eins-modal-tec">
-                            <img src="Images/c sharp.png" alt="">
-                            <img src="Images/visualStudio.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="p_hospital" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"></div>
-            <div class="p_Content">
-                <div class="eins-modal-preview">
-                    <img src="Images/doc.jpeg" alt="">
-                    <img src="Images/doc2.jfif" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>Hospital desarrollo de de aplicacion de administradion de pacientes con lenguaje c#.</p>
-                    <div class="eins-modal-text2">
-                        <span>Enlace:</span><a href="https://github.com/LIBIA71421">https://github.com/LIBIA71421</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Tecnologias Usadas:</span>
-                        <div class="eins-modal-tec">
-                            <img src="Images/c sharp.png" alt="">
-                            <img src="Images/visualStudio.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="p_spider" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"></div>
-            <div class="p_Content">
-                <div class="eins-modal-preview">
-                    <img src="Images/spider4.jpg" alt="">
-                    <img src="Images/spider1.jpg" alt="">
-                    <img src="Images/spider3.jpg" alt="">
-                    <img src="Images/calcu.jpg" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>SPIDER desarrollo de de aplicacion con con enfoque hacia la resolucion de problemas de fisica basado en los movimientos de spiderman con el lenguaje c#.</p>
-                    <div class="eins-modal-text2">
-                        <span>Enlace:</span><a href="https://github.com/LIBIA71421/FISICA">https://github.com/LIBIA71421/FISICA</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Tecnologias Usadas:</span>
-                        <div class="eins-modal-tec">
-                            <img src="Images/c sharp.png" alt="">
-                            <img src="Images/visualStudio.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="p_calcuSudokuTicTacToe" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"></div>
-            <div class="p_Content">
-                <div class="eins-modal-preview">
-                    <img src="Images/calcu.jpg" alt="">
-                    <img src="Images/zudoku.jpg" alt="">
-                    <img src="Images/tictactoe.jpg" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>CALCULADORA desarrollo de de aplicacion con para una integracion del juego de SPIDER con el lenguaje c#.</p>
-                    <div class="eins-modal-text2">
-                        <span>Enlace:</span><a href="https://github.com/LIBIA71421/FISICA">https://github.com/LIBIA71421/FISICA</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Tecnologias Usadas:</span>
-                        <div class="eins-modal-tec">
-                            <img src="Images/c sharp.png" alt="">
-                            <img src="Images/visualStudio.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <div id="p_retrato" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"></div>
-            <div class="p_Content">
-                <div class="eins-modal-preview">
-                    <img src="Images/retrato.jpg" alt="">
-                    <img src="Images/pirata.jpg" alt="">
-                    <img src="Images/retratoNena.jpeg" alt="">
-                    <img src="Images/indigena.jpeg" alt="">
-                    <img src="Images/holitaPacenia.jpeg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="p_buho" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"></div>
-            <div class="p_Content">
-                <div class="eins-modal-preview">
-                    <img src="Images/buho.jpg" alt="">
-                    <img src="Images/buhoA.jpeg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="p_anime" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"></div>
-            <div class="p_Content">
-                <div class="eins-modal-preview">
-                    <img src="Images/animeGirl.jpeg" alt="">
-                    <img src="Images/dibPareja.jpeg" alt="">
-                    <img src="Images/RakanYShaya.jpeg" alt="">
-                    <img src="Images/yuno.jpeg" alt="">
-                    <img src="Images/animeGirl2.jpeg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="p_origami" class="eins-modal" data-options="openTransition expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"></div>
-            <div class="p_Content">
-                <div class="eins-modal-preview">
-                    <img src="Images/spiderOrigami2.jpeg" alt="">
-                    <img src="Images/spiderOrigami3.jpeg" alt="">
-                    <img src="Images/spiderOrigami.jpeg" alt="">
-                    <img src="Images/origamiElefante.jpeg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="script.js"></script>
-    <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
+</section>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav_menu');
+            menu.classList.toggle('show-menu');
+        }
+    </script>
 </body>
 </html>
